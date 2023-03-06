@@ -1,6 +1,8 @@
 QT += quick
 
 SOURCES += \
+        CalculationsOperator.cpp \
+        MainObject.cpp \
         main.cpp
 
 resources.files = main.qml 
@@ -21,3 +23,7 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 DISTFILES += \
     CustomButton.qml
+
+HEADERS += \
+    CalculationsOperator.h \
+    MainObject.h

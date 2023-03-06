@@ -1,14 +1,11 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
-
+#include "MainObject.h"
 
 int main(int argc, char *argv[])
 {
     QGuiApplication app(argc, argv);
-
-    QQmlApplicationEngine engine;
-    const QString mainQmlPath = "://main.qml";
-    engine.load(mainQmlPath);
+    MainObject mainObject;
 
     return app.exec();
 }
